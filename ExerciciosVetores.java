@@ -84,5 +84,30 @@ public class ExerciciosVetores {
             System.out.println("Posicao " + i + ": " + numeros4[i]);
         }
         entrada.close();
+
+        /*  Faça um programa que receba 5 números reais e os
+            armazena em um vetor X de 5 posições. O programa deverá
+            armazenar o valor/2 de cada posição do vetor X em um
+            vetor Y, também de 5 posições. No final, o programa deverá
+            escrever todo o conteúdo dos vetores X e Y na tela; */
+
+        double x[] = new double[5];
+        double y[] = new double[5];
+        System.out.println("\nDigite 5 números reais:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            x[i] = entrada.nextDouble();
+            y[i] = x[i] / 2;
+        }
+        System.out.println("\nConteúdo do vetor X:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Posição " + i + ": " + x[i]);
+        }
+        System.out.println("\nConteúdo do vetor Y:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Posição " + i + ": " + y[i]);
+        }
+
+        
     }
 }
